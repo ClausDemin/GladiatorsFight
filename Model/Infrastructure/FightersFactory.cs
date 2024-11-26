@@ -1,6 +1,4 @@
-﻿using GladiatorsFight.Model.Abilities;
-using GladiatorsFight.Model.AbstractClasses;
-using GladiatorsFight.Model.Stats;
+﻿using GladiatorsFight.Model.AbstractClasses;
 using GladiatorsFight.Service;
 
 namespace GladiatorsFight.Model.Infrastructure

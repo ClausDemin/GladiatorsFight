@@ -66,8 +66,7 @@ namespace GladiatorsFight.Model
             {
                 DamageTaken?.Invoke(amount);
             }
-
-            if (amount > 0) 
+            else if (amount > 0) 
             { 
                 HealthRestored?.Invoke(amount);
             }

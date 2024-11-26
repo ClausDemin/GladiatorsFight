@@ -7,6 +7,7 @@ namespace GladiatorsFight.View
         private SwitchableMenu _menu;
 
         bool _isExitRequest;
+        
         public MainMenu() 
         {
             var menuItems = new List<MenuItem>();
