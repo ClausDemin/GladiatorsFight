@@ -1,15 +1,16 @@
 ﻿using GladiatorsFight.Model.AbstractClasses;
+using GladiatorsFight.Model.Enums;
 using GladiatorsFight.Model.Infrastructure;
 using GladiatorsFight.Model.Interfaces;
 
 namespace GladiatorsFight.Model.Abilities
 {
-    public class DoubleAttackDecorator : AbstractFighterDecorator
+    public class DoubleAttack : AbstractFighterDecorator
     {
         private int _doubleAttackCooldown;
         private int _turnsPassed;
 
-        public DoubleAttackDecorator(AbstractFighter fighter, int doubleAttackCooldown) 
+        public DoubleAttack(AbstractFighter fighter, int doubleAttackCooldown) 
             :base(fighter, FighterType.DoubleAttack)
         {
             _doubleAttackCooldown = doubleAttackCooldown;

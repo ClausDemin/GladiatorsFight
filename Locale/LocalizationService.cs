@@ -1,4 +1,4 @@
-﻿using GladiatorsFight.Model.Infrastructure;
+﻿using GladiatorsFight.Model.Enums;
 
 namespace GladiatorsFight.Locale
 {

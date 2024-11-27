@@ -22,7 +22,10 @@ namespace GladiatorsFight.View
 
             var textBoxPosition = UIUtils.GetPositionAfter(_fighterChooseMenu);
 
-            _textBox = new TextBox(new Point(0, 0), Console.BufferWidth - 5);
+            int textBoxMarginRight = 5;
+            int textBoxWidth = Console.BufferWidth - textBoxMarginRight;
+
+            _textBox = new TextBox(new Point(0, 0), textBoxWidth);
 
             _arenaService = new ArenaService(_fighterChooseMenu.GetUserInput(), _fighterChooseMenu.GetUserInput(), fighterService, _battleLogger);
 
@@ -32,7 +35,7 @@ namespace GladiatorsFight.View
                 PrintBattleMessage
                 (
                     message.Split('.')
-                    .Select(x => x.Trim())
+                    .Select(line => line.Trim())
                     .ToArray()
                 );
         }

@@ -1,5 +1,6 @@
 ﻿using GladiatorsFight.Model.Abilities;
 using GladiatorsFight.Model.AbstractClasses;
+using GladiatorsFight.Model.Enums;
 using GladiatorsFight.Model.Stats;
 
 namespace GladiatorsFight.Model.Infrastructure
@@ -91,14 +92,14 @@ namespace GladiatorsFight.Model.Infrastructure
         {
             float criticalStrikeChance = 0.25f;
 
-            return new CriticalStrikeDecorator(fighter, criticalStrikeChance);
+            return new CriticalStrike(fighter, criticalStrikeChance);
         }
 
         private static AbstractFighter CreateDoubleAttackFighter(AbstractFighter fighter)
         {
             int doubleAttackCooldown = 3;
 
-            return new DoubleAttackDecorator(fighter, doubleAttackCooldown);
+            return new DoubleAttack(fighter, doubleAttackCooldown);
         }
 
         private static AbstractFighter CreateBattleRageFighter(AbstractFighter fighter)
@@ -107,7 +108,7 @@ namespace GladiatorsFight.Model.Infrastructure
             var ragePerDamage = new SpreadedStat(2, 1);
             var enrageHealAmount = new SpreadedStat(15, 5);
 
-            return new BattleRageDecorator(fighter, rage, enrageHealAmount, ragePerDamage);
+            return new BattleRage(fighter, rage, enrageHealAmount, ragePerDamage);
         }
 
         private static AbstractFighter CreateFireBallFighter(AbstractFighter fighter)
@@ -116,14 +117,14 @@ namespace GladiatorsFight.Model.Infrastructure
             int fireBallManaCost = 5;
             var fireBallDamage = new SpreadedStat(25, 5);
 
-            return new FireBallDecorator(fighter, mana, fireBallManaCost, fireBallDamage);
+            return new FireBall(fighter, mana, fireBallManaCost, fireBallDamage);
         }
 
         private static AbstractFighter CreateEvasionFighter(AbstractFighter fighter)
         {
             float evasionChance = 0.25f;
 
-            return new EvasionDecorator(fighter, evasionChance);
+            return new Evasion(fighter, evasionChance);
         }
     }
 }

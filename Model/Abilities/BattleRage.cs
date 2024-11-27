@@ -1,16 +1,16 @@
 ﻿using GladiatorsFight.Model.AbstractClasses;
-using GladiatorsFight.Model.Infrastructure;
+using GladiatorsFight.Model.Enums;
 using GladiatorsFight.Model.Stats;
 
 namespace GladiatorsFight.Model.Abilities
 {
-    public class BattleRageDecorator: AbstractFighterDecorator
+    public class BattleRage: AbstractFighterDecorator
     {
         private RangedStat _rage;
         private SpreadedStat _ragePerDamage;
         private SpreadedStat _enrageHealAmount;
 
-        public BattleRageDecorator(AbstractFighter fighter, RangedStat rage, SpreadedStat enrageHealAmount, SpreadedStat ragePerDamage) 
+        public BattleRage(AbstractFighter fighter, RangedStat rage, SpreadedStat enrageHealAmount, SpreadedStat ragePerDamage) 
             : base(fighter, FighterType.BattleRage)
         {
             _rage = rage;

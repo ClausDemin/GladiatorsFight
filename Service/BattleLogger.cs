@@ -1,7 +1,4 @@
-﻿using GladiatorsFight.Model;
-using System.Text;
-
-namespace GladiatorsFight.Service
+﻿namespace GladiatorsFight.Service
 {
     public class BattleLogger
     {

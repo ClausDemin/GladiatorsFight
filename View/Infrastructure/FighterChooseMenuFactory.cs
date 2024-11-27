@@ -1,4 +1,4 @@
-﻿using GladiatorsFight.Model.Infrastructure;
+﻿using GladiatorsFight.Model.Enums;
 using GladiatorsFight.Service;
 using System.Drawing;
 

@@ -1,15 +1,16 @@
 ﻿using GladiatorsFight.Model.AbstractClasses;
+using GladiatorsFight.Model.Enums;
 using GladiatorsFight.Model.Infrastructure;
 using GladiatorsFight.Model.Interfaces;
 
 namespace GladiatorsFight.Model.Abilities
 {
-    public class CriticalStrikeDecorator : AbstractFighterDecorator
+    public class CriticalStrike : AbstractFighterDecorator
     {
         private float _criticalStrikeChance;
         private int _criticalDamageMultiplyer;
 
-        public CriticalStrikeDecorator(AbstractFighter fighter, float criticalStrikeChance, int criticalDamageMultiplyer = 2)
+        public CriticalStrike(AbstractFighter fighter, float criticalStrikeChance, int criticalDamageMultiplyer = 2)
             :base(fighter, FighterType.CriticalStrike)
         {
             _criticalStrikeChance = criticalStrikeChance;

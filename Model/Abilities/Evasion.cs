@@ -1,13 +1,14 @@
 ﻿using GladiatorsFight.Model.AbstractClasses;
+using GladiatorsFight.Model.Enums;
 using GladiatorsFight.Model.Infrastructure;
 
 namespace GladiatorsFight.Model.Abilities
 {
-    public class EvasionDecorator : AbstractFighterDecorator
+    public class Evasion : AbstractFighterDecorator
     {
         private float _evasionChance;
 
-        public EvasionDecorator(AbstractFighter fighter, float evasionChance)
+        public Evasion(AbstractFighter fighter, float evasionChance)
             : base(fighter, FighterType.Evasion)
         {
             _evasionChance = evasionChance;

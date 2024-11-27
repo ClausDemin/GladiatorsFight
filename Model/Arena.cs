@@ -1,5 +1,5 @@
 ﻿using GladiatorsFight.Model.AbstractClasses;
-using GladiatorsFight.Model.Infrastructure;
+using GladiatorsFight.Model.Enums;
 using GladiatorsFight.Model.Interfaces;
 using GladiatorsFight.Service;
 
@@ -125,12 +125,5 @@ namespace GladiatorsFight.Model
 
             return FighterNumber.First;
         }
-    }
-
-    public enum FighterNumber
-    {
-        Nobody = 0,
-        First = 1,
-        Second = 2
     }
 }

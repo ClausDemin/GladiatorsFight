@@ -1,4 +1,6 @@
-﻿namespace GladiatorsFight.Model
+﻿using GladiatorsFight.Model.Enums;
+
+namespace GladiatorsFight.Model
 {
     public class ArenaInfo
     {
@@ -58,7 +60,7 @@
         {
             if (_abilityUsed != null && _abilityUsed.Count > 0)
             {
-                foreach (var message in _abilityUsed.OrderBy(x => x.Key))
+                foreach (var message in _abilityUsed.OrderBy(abilityUsedIfno => abilityUsedIfno.Key))
                 {
                     foreach (var item in message.Value)
                     {

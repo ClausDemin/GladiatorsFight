@@ -23,7 +23,10 @@
         {
             ArgumentOutOfRangeException.ThrowIfLessThan(value, 0);
 
-            value = _value - value < _minValue ? _value : value;
+            if (_value - value < _minValue)
+            {
+                value = _value;
+            }
 
             _value -= value;
 
@@ -34,7 +37,10 @@
         {
             ArgumentOutOfRangeException.ThrowIfLessThan(value, 0);
 
-            value = _value + value > _maxValue? _maxValue - _value : value;
+            if (_value + value > _maxValue)
+            {
+                value = _maxValue - _value;
+            }
 
             _value += value;
 

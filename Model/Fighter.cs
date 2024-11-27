@@ -50,7 +50,9 @@ namespace GladiatorsFight.Model
 
         private int ReduceDamage(int damage) 
         {
-            damage = damage * (1 - Armor / 100);
+            float damageReducePercentage = (1 - Armor / 100);
+
+            damage = (int) Math.Round(damage * damageReducePercentage);
 
             if (damage <= 0) 
             {

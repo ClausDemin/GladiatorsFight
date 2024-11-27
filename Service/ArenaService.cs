@@ -1,4 +1,5 @@
 ﻿using GladiatorsFight.Model;
+using GladiatorsFight.Model.Enums;
 
 namespace GladiatorsFight.Service
 {

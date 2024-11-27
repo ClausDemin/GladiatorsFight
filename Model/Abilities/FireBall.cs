@@ -1,18 +1,18 @@
 ﻿using GladiatorsFight.Model.AbstractClasses;
-using GladiatorsFight.Model.Infrastructure;
+using GladiatorsFight.Model.Enums;
 using GladiatorsFight.Model.Interfaces;
 using GladiatorsFight.Model.Stats;
 
 namespace GladiatorsFight.Model.Abilities
 {
-    public class FireBallDecorator : AbstractFighterDecorator
+    public class FireBall : AbstractFighterDecorator
     {
         private RangedStat _mana;
         private int _manaCost;
 
         private SpreadedStat _damage;
 
-        public FireBallDecorator(AbstractFighter fighter, RangedStat mana, int fireBallManaCost , SpreadedStat fireBallDamage)
+        public FireBall(AbstractFighter fighter, RangedStat mana, int fireBallManaCost , SpreadedStat fireBallDamage)
             : base(fighter, FighterType.FireBall)
         {
             _mana = mana;

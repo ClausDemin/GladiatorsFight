@@ -1,5 +1,6 @@
 ﻿using GladiatorsFight.Locale;
 using GladiatorsFight.Model.AbstractClasses;
+using GladiatorsFight.Model.Enums;
 using GladiatorsFight.Model.Infrastructure;
 
 namespace GladiatorsFight.Service
